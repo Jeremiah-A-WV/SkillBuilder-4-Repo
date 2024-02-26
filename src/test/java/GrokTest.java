@@ -35,7 +35,7 @@ class GrokTest {
     void setPowerLevel() {
         Grok grok = new Grok(0);
         grok.setPowerLevel(75);
-        String expected = "Grok:(0,false)";
+        String expected = "Grok:(75,false)";
         String actual = grok.toString();
         String message = "Expecting "+expected+" and got "+actual;
         assertEquals(expected, actual,message);
