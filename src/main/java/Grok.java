@@ -64,6 +64,12 @@ public class Grok
     {
         if(isAlive) {
             this.powerLevel = Math.min(powerLevel, MAX_POWER_LEVEL);
+        } else {
+            if (powerLevel > MAX_POWER_LEVEL || powerLevel < 0) {
+                this.powerLevel = 0;
+            } else {
+                this.powerLevel = powerLevel;
+            }
         }
     }
 
